@@ -1,0 +1,69 @@
+@import url(../css/style-fonts.css);
+@import url(../css/style-colors.css);
+
+/* .my-skills-topic{
+    background-color: darkgray;
+}
+
+.circles {
+    background-color: rgb(212, 152, 152);
+}
+
+.circle{
+    background-color: bisque;
+}
+
+.my-skills-info{
+    background-color: rgb(115, 159, 132);
+}
+
+.my-skills-examples{
+    background-color: burlywood;
+} */
+
+/* STYLES FOR MY-SKILLS */
+
+.circles{
+    display: flex;
+    text-align: center;
+}
+
+.circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    margin: auto;
+    border-top: solid var(--third-color) 25px;
+    border-right: solid #9aac90 25px;
+    border-bottom: solid var(--third-color) 25px;
+    border-left: solid var(--third-color) 25px;
+    display: table;
+}
+
+.circle>p{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.my-skills-topic{
+    margin-top: 50px;
+}
+
+.my-skills-info{
+    margin-top: 20px;
+}
+
+.my-skills-examples{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.my-skills-examples>img{
+    width: 25%;
+    margin: 20px 20px;
+    border: solid var(--fifth-color);
+}
+
+
+
+

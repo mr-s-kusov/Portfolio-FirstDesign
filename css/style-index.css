@@ -1,0 +1,64 @@
+@import url(../css/style-fonts.css);
+@import url(../css/style-colors.css);
+
+/* --------------------------------------------------------------------ВЕРХНИЕ КАРТИНКИ */
+
+.index-img{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+}
+
+.index-img>img{
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 80px 20px;
+    box-shadow: 2px 1px 0px var(--first-color), 6px 5px 0px var(--fifth-color);
+}
+
+/* --------------------------------------------------------------------ОСНОВНАЯ ИНФОРМАЦИЯ */
+
+.index-main{
+    margin-top: 100px;
+    padding-left: 20px;
+}
+
+.main-logo{
+    margin-top: 50px;
+    padding-left: 50px;
+    display: flex;
+}
+
+.index-portfolio-link{
+    font-family: var(--second-s-font-family);
+    font-size: var(--second-s-font-size);
+    color: var(--second-s-font-color);
+}
+
+.index-boxlink{
+    margin-top: 20px;
+    padding: 5px;
+    color: rgb(49, 49, 49);
+    border: solid 3px var(--fifth-color);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.index-boxlink>img{
+    height: 25px;
+    margin-left: 10px;
+}
+
+/* LOGO */
+
+.index-main-logo{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-main-logo>img{
+    width: 350px;
+}

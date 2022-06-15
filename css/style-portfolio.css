@@ -1,0 +1,202 @@
+@import url(../css/style-fonts.css);
+@import url(../css/style-colors.css);
+
+.container{
+    filter: none;
+}
+
+/* PORTFOLIO-STYLES */
+
+.portfolio-topic{
+    margin-top: 100px;
+    padding-left: 20px;
+}
+
+.portfolio-examples{
+    display: flex;
+    margin-top: 50px;
+}
+
+.miniature{
+    margin: 15px auto;
+    cursor: pointer;
+    width: 27%;
+}
+
+.miniature>img{
+    width: 100%;
+    height: 150px;
+    border-radius: 80px 20px;
+    box-shadow: 2px 1px 0px var(--first-color), 6px 5px 0px var(--fifth-color);
+}
+
+.miniature>p{
+    margin-top: 5px;
+    text-align: center;
+    font-family: var(--second-s-font-family);
+    font-size: var(--second-s-font-size);
+    color: var(--second-s-font-color);
+}
+
+/* --------------------------------------------------------------------ВСПЛЫВАЮЩЕЕ ОКНО */
+
+@keyframes show {
+    from {opacity: 0;} to {opacity: 1;}
+}
+
+.portfolio-window {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.portfolio-show {
+    width: 1000px;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20% 0 0 -500px;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 0 4px 12px var(--third-color), 0 10px 18px var(--third-color);
+}
+
+/* --------------------------------------------------------------------ПОЛОСА ПРОКРУТКИ */
+
+.portfolio-show::-webkit-scrollbar {
+    width: 10px;
+    visibility: hidden;
+}
+
+.portfolio-show::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background-color: var(--fifth-color);
+}
+
+.portfolio-show::-webkit-scrollbar-track {
+/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); */
+border-radius: 10px;
+background-color: var(--first-color);
+}
+
+/* --------------------------------------------------------------------ВЕРХНЯЯ ПОЛОСА С КНОПКОЙ ЗАКРЫТЬ */
+
+.cl-btn-2 {
+    display: flex;
+    margin: 20px;
+    width: auto;
+    position: sticky;
+    top: 20px;
+}
+
+/* --------------------------------------------------------------------НОМЕРА СТРАНИЦ */
+
+.pages{
+    display: flex;
+    width: 930px;
+}
+
+.show-page{
+    margin-right: 75px;
+    margin-left: 75px;
+    font-family: var(--first-b-font-family);
+    font-size: var(--first-b-font-size);
+    display: table;
+    text-align: center;
+    padding: 7px 0 7px 0;
+    cursor: pointer;
+}
+
+.show-page>p{
+    display: table-cell;
+    vertical-align: middle;
+    border: var(--fifth-color) solid 4px;
+    border-radius: 25px;
+    width: 400px;
+    background-color: var(--fourth-color);
+}
+
+/* --------------------------------------------------------------------КНОПКА ЗАКРЫТЬ */
+
+.cl-btn-2-cross {
+    cursor: pointer;
+    position: relative;  
+    height: 68px;
+    width: 50px;
+}
+
+.cl-btn-2 .leftright {
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: var(--fifth-color);
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in;
+}
+
+.cl-btn-2 .rightleft {
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: var(--fifth-color);
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in;
+}
+
+.cl-btn-2 .close-btn {
+    margin: 54px 0 0 -5px;
+    position: absolute;
+    color: var(--fifth-color);
+    font-family: Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+    opacity: 0; 
+}
+
+.cl-btn-2 div:hover .leftright {
+    transform: rotate(-45deg);
+    background-color: #000;
+}
+
+.cl-btn-2 div:hover .rightleft {
+    transform: rotate(45deg);
+    background-color: #000;
+}
+
+.cl-btn-2 div:hover .close-btn {
+    opacity: 1;
+}
+
+/* --------------------------------------------------------------------КОНТЕНТ (КАРТИНКА) ПРОЕКТА */
+
+.show-content>img{
+    width: 90%;
+    padding-bottom: 20px;
+}
+
+.portfolio-1-1{
+    margin: 0 auto;
+    display: block;
+}
+
+.portfolio-1-2{
+    margin: 0 auto;
+    display: none;
+}
+
+.portfolio-1-3{
+    margin: 0 auto;
+    display: none;
+}
+
