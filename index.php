@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.S.K.-Main</title>
+    <title>skusov-main</title>
+    <link rel="icon" href="img\fav.jpg">
     <link rel="stylesheet" href="css/style-index.css">
     <link rel="stylesheet" href="css/style-common.css">
     </head>
 <body>
     <div class="container">
 
-        <?php include 'menu.php';?> <!--File included the left menu -->
+        <?php include 'menu.php';?>
 
         <div class="info">
+
+            <?php include 'menu-small.php';?>
 
             <div class="index-main">
                 <p class="t-topic f-t-topic">Вёрстка web-сайтов</p>
@@ -23,7 +26,6 @@
                 <img src="img/code-left-1.png" alt="">
                 <img src="img/proger.png" alt="">
                 <img src="img/code-right-1.jpg" alt="">
-                <!-- <p>Hello world!</p> -->
             </div>
 
             <div class="main-logo">

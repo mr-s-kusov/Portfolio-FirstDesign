@@ -1,5 +1,5 @@
 <div id="window1" class="portfolio-window">
-    <div class="portfolio-show">         
+    <div id="portfolio_show" class="portfolio-show">         
 
         <div class="cl-btn-2">
 

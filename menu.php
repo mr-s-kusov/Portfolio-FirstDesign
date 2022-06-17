@@ -4,7 +4,6 @@
     <div class="profession f-profession">html/css developer</div>
     <div class="menu-box">
         <div id="a-main" class="menu-link f-link"><a href="index.php">Главная</a></div>
-        <!-- <div id="a-my-skills" class="menu-link f-link"><a href="my-skills.php">Мои навыки</a></div> -->
         <div id="a-portfolio" class="menu-link f-link"><a href="portfolio.php">Портфолио</a></div>
         <div id="a-contacts" class="menu-link f-link"><a href="contacts.php">Контакты</a></div>
     </div>

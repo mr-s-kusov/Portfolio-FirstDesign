@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.S.K.-Portfolio</title>
+    <title>skusov-portfolio</title>
+    <link rel="icon" href="img\fav.jpg">
     <link rel="stylesheet" href="css/style-common.css">
     <link rel="stylesheet" href="css/style-portfolio.css">
 </head>
@@ -14,6 +15,8 @@
         <?php include 'menu.php';?> <!--File included the left menu -->
         
         <div class="info">
+
+            <?php include 'menu-small.php';?>
 
             <div class="portfolio-topic">
                 <p class="t-topic f-t-topic">Портфолио</p>
@@ -27,7 +30,7 @@
 
                 <div onclick="look('window0', 'blur'); return false;" class="miniature">
                     <img src="img\portfolio-2-ico.jpg" alt="">
-                    <p>Сайт-визитка (landing)</p>
+                    <p>Сайт-визитка (новый дизайн)</p>
                 </div>
 
                 <div onclick="look('window0', 'blur'); return false;" class="miniature">
@@ -43,6 +46,6 @@
     <?php include 'link1.php';?>
 
     <script src="scripts\script-portfolio.js"></script>
-
+    
 </body>
 </html>

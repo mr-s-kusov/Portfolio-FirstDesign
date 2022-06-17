@@ -15,7 +15,8 @@
         </div>
 
         <div class="show-content">
-            
+            <div class="loader"></div>
+            <div class="loader-info">Сайт находится в разработке...</div>
         </div>
 
     </div>
